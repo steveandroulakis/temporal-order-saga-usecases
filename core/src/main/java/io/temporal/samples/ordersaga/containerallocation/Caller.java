@@ -72,6 +72,7 @@ public class Caller {
 
     int quantity;
     try {
+      System.out.println("QUANTITY: " + args[0]);
       quantity = Integer.parseInt(args[0]);
     } catch (NumberFormatException e) {
       throw new IllegalArgumentException("The provided quantity is not a valid integer.");
