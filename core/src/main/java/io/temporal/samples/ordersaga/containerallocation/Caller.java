@@ -64,7 +64,7 @@ public class Caller {
 
   @SuppressWarnings("CatchAndPrintStackTrace")
   public static void main(String[] args) throws Exception {
-    System.out.println("EXAMPLE: ./gradlew -q execute -PmainClass=io.temporal.samples.ordersaga.containerallocation.Caller -Pquantity=250");
+    System.out.println("EXAMPLE: ./gradlew -q execute -PmainClass=io.temporal.samples.ordersaga.containerallocation.Caller -Parg=250");
 
     if (args.length != 1) {
       throw new IllegalArgumentException("Please provide the quantity as a parameter.");
