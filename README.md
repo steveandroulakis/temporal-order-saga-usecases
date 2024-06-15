@@ -56,7 +56,7 @@ Providing a quantity of 350 will succeed:
 ./gradlew -q execute -PmainClass=io.temporal.samples.ordersaga.containerallocation.Caller -Parg=350
 ```
 
-#### Trigger a Saga allocation:
+#### Trigger a Saga compensation:
 * If the quantity requested is greater than 400, the workflow will fail due to insufficient allocation
   * If an allocation fails, the workflow will run a compensation to 'reverse' the allocations in all containers
 
