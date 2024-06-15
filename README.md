@@ -21,6 +21,8 @@ TEMPORAL_KEY_PATH="/path/to/file.key"
 
 ## Workflow Use Case 1: Split 'Subtract' Traffic with Compensations
 
+#### [Workflow Code](./core/src/main/java/io/temporal/samples/ordersaga/splittrafficsubtract/SplitTrafficSubtractSAGAImpl.java)
+
 ![Temporal UI for Compensation Subtract Workflow](./compensation-subtract.png)
 
 * Splits a list of SKUs into two groups:
@@ -39,6 +41,8 @@ TEMPORAL_KEY_PATH="/path/to/file.key"
 * Restart your worker, then re-run the workflow
 
 ## Workflow Use Case 2: Compensations for failures in Multi-Container Allocation
+
+#### [Workflow Code](./core/src/main/java/io/temporal/samples/ordersaga/containerallocation/ContainerAllocationSAGAImpl.java)
 
 ![Temporal UI for Compensation Allocate Workflow](./compensation-allocate.png)
 
